@@ -36,7 +36,7 @@ int main(int argc, char** argv) {
     volatile unsigned char *bytes = (unsigned char*) malloc(msize);
 
     std::uniform_int_distribution<size_t> address(0, msize-1);
-    std::uniform_int_distribution<u_int8_t> data(0, 255);
+    std::uniform_int_distribution<uint8_t> data(0, 255);
 
     std::cout << "Memory has been allocated, executing random memory access." << std::endl;
     std::cout.flush();
